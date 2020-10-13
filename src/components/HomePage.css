@@ -1,0 +1,261 @@
+.stars,
+.twinkling,
+.clouds {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.stars {
+  z-index: 0;
+  background: #000 url("https://image.ibb.co/mjnygo/stars.png") repeat top
+    center;
+}
+
+.twinkling {
+  z-index: 1;
+  background: transparent url("https://image.ibb.co/ir1DE8/twinkling.png")
+    repeat top center;
+  animation: move-twink-back 200s linear infinite;
+}
+
+.clouds {
+  z-index: 2;
+  background: transparent url("https://image.ibb.co/bT4N7T/clouds.png") repeat
+    top center;
+  animation: move-clouds-back 200s linear infinite;
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+.h1-homepage,
+.h3-homepage,
+.buttons-homepage {
+  z-index: 10;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+.homepage-container {
+  padding-top: 25vh;
+}
+.h1-homepage {
+  font-family: Cormorant Garamond;
+  font-weight: 500;
+  font-size: 96px;
+  padding: 0;
+  margin: 0;
+}
+.h3-homepage{
+    font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 30px;
+letter-spacing: 0.18em;
+padding: 0;
+margin: 0;
+margin-top: -23px;
+}
+.productos-button__homepage{
+background-color: #CDAE0F;
+color: #EEEEEE;
+border: 2px solid #CDAE0F;
+border-radius: 59px;
+width: 175px;
+height: 40px;
+margin: 30px 10px;
+font-weight: 500;
+font-size: 15px;
+}
+.quienes-button__homepage{
+background: transparent;
+color: #EEEEEE;
+border-radius: 59px;
+border: 2px solid #CDAE0F;
+width: 175px;
+height: 40px;
+margin: 30px 10px;
+font-weight: 500;
+}
+
+/** FIRST SECTION **/
+.first-section-homepage__title{
+    padding-top: 300px;
+    text-align: center;
+}
+.first-section-homepage__h2{
+    color: #25313C;
+    position: relative;
+    font-size: 30px;
+line-height: 13px;
+letter-spacing: 0.16em;
+font-weight: 350;
+}
+.moon-phase{
+    position: absolute;
+left: 42.55%;
+right: 39.65%;
+top: 122%;
+bottom: 65.28%;
+    width: 180px;
+}
+.flexbox-first-section__homepage{
+    display: flex;
+
+}
+
+.first-candle{
+    width: 358px;
+}
+.first-paragraph__homepage, .second-section__homepage-paragraph{
+    font-weight: 300;
+font-size: 20px;
+line-height: 166.8%;
+letter-spacing: 0.08em;
+margin-top: 110px;
+color: #6D7D8B;
+width: 605px;
+}
+.title-and-star-second__section-homepage{
+    display: flex;
+    padding-top: 110px;
+}
+.second-section__homepage-h2{
+    color: #25313C;
+    font-size: 30px;
+letter-spacing: 0.16em;
+font-weight: 350;
+max-width: 335px;
+
+}
+.star-homepage{
+    width:100px;
+    height:100px;
+    margin-left: -30px;
+    margin-top:11px;
+}
+.second-section__homepage{
+display: flex;
+justify-content: space-between;
+padding-left: 90px;
+
+}
+.second-candle{
+    width: 450px;
+}
+.second-section__homepage-paragraph{
+    margin-top: 0 ;
+    width: 105%;
+}
+.left-block-second-section__homepage{
+    width:50%;
+}
+
+.product-pics__homepage{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 90px;
+
+}
+.product{
+    width: 300px;
+}
+.h2-third-section__homepage{
+    text-align: center;
+    color: #25313C;
+    font-size: 30px;
+letter-spacing: 0.09em;
+font-weight: 400;
+margin-top:110px;
+
+}
+.h3-products-section__homepage{
+    font-size: 19px;
+line-height: 140%;
+letter-spacing: 0.08em;
+color: #25313C;
+margin-right: 20px;
+font-weight: 400;
+}
+.visita-arrow{
+    display: flex;
+    justify-content: center;
+}
+.arrow{
+    width: 50px;
+}
+.third-section__homepage{
+    margin-bottom: 100px;
+}
+
+footer{
+    background: #C4CBD1;
+    height: 239px;
+    padding: 0px 90px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+}
+.footer-logo{
+    margin-top: 30px;
+    max-width: 120px;
+}
+.footer-column{
+    max-width: 250px;
+}
+.footer-paragraph, .copyright{
+    font-size: 12px;
+line-height: 150.3%;
+
+
+color: #898f96;
+}
+.footer-paragraph{
+    width: 60%;
+}
+.copyright{
+    margin-top: 68px;
+    margin-bottom: 20px;
+}
+.social-icon{
+    margin-left:20px;
+    width: 18px;
+    margin-bottom: 5.5px;
+}
+.socials{
+    margin-bottom: 7px;
+}
+.mail-icon{
+    margin-top: 25px;
+    width: 19px;
+}
+.instagram-icon{
+    margin-bottom: 10px;
+    width:17px;
+}
+.whatsapp-icon{
+    margin-bottom: 8.6px;
+    width: 19px;
+}
